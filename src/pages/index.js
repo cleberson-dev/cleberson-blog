@@ -4,7 +4,7 @@ import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Menu from "../components/Menu";
 import PostList from "../components/PostList";
-import SEO from "../components/SEO";
+import SEO from "../components/seo";
 
 import { 
   getPostsOutOfMarkdownRemarks, getPostImages, 

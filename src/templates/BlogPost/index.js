@@ -8,7 +8,7 @@ import theme from "../../utils/theme";
 
 import Layout from "../../components/Layout";
 import SVGIcon from "../../components/SVGIcon";
-import SEO from "../../components/SEO";
+import SEO from "../../components/seo";
 
 import { 
   PostHeader, PostCategoryLabel, PostContent, PostDate, PostImage, PostTitle,

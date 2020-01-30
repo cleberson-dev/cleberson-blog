@@ -1,97 +1,115 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
-</p>
+
+
+<img src="./src/images/blog-logo.png" height="150" align="center" />
+
 <h1 align="center">
-  Gatsby's default starter
+  Cleberson Jr. Blog
 </h1>
 
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+Blog pessoal construído com Gatsby para compartilhar minhas experiências e conhecimentos.
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
 
-## 🚀 Quick start
 
-1.  **Create a Gatsby site.**
 
-    Use the Gatsby CLI to create a new site, specifying the default starter.
 
-    ```shell
-    # create a new Gatsby site using the default starter
-    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
-    ```
+## :wrench: Instalação e Uso
 
-1.  **Start developing.**
+### Pre-requisitos
 
-    Navigate into your new site’s directory and start it up.
+Para funcionar, é necessário que tenha [Node.js](https://nodejs.org/) instalado em sua máquina. 
 
-    ```shell
-    cd my-default-starter/
-    gatsby develop
-    ```
+### Instalação
 
-1.  **Open the source code and start editing!**
+Baixe o Gatsby CLI globalmente com NPM na sua linha de comandos favorita (PowerShell, Bash, CMD, ...):
 
-    Your site is now running at `http://localhost:8000`!
+```bash
+npm install -g gatsby-cli
+```
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+Copie o repositório para sua máquina, podendo ser de duas formas:
 
-    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+- Baixando pelo GitHub.
 
-## 🧐 What's inside?
+- Clonando-o:
 
-A quick look at the top-level files and directories you'll see in a Gatsby project.
+  ```bash
+  git clone https://github.com/cleberson-dev/cleberson-blog.git
+  ```
 
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── .prettierrc
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    └── README.md
+Instale as dependências necessárias com NPM:
 
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
+```bash
+npm install
+```
 
-2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
+Dentro do diretório do repositório, execute o script para:
 
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
+- Gerar todos os arquivos estáticos do blog:
 
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
+  ``````bash
+  gatsby build
+  ``````
 
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
+- Entrar em modo de desenvolvimento (com Hot Reloading e GraphiQL):
 
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
+  ```bash
+  gatsby develop
+  ```
 
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
+E seja feliz!
 
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
 
-9.  **`LICENSE`**: Gatsby is licensed under the MIT license.
 
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
 
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
 
-12. **`README.md`**: A text file containing useful reference information about your project.
+## :page_with_curl: Sobre o Blog
+É um blog pessoal, que objetiva compartilhar aprendizados, conhecimentos, experiências, pensamentos que tenho durante não somente meus estudos (com Computação, Desenvolvimento, Web), mas também em qualquer outro assunto. Tem foco na área de TI, porém ele tentará ser de domínio mais amplo.
 
-## 🎓 Learning Gatsby
+Os posts seguem uma estrutura em pastas para conseguirem serem mostrados e definidos como postagens dentro do blog:
 
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
+- Devem estar dentro do diretório: `/posts` (Relativo ao diretório do repositório)
 
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
+- Cada nova postagem deve estar em seu próprio diretório relativo ao `/posts`, com o nome do diretório sendo usado como rota (ex. diretório `meu-novo-post` terá uma rota `www.example.com/meu-novo-post`)
 
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
+- O conteúdo da postagem deve está em um arquivo markdown `.md` com o nome de `content.md` na sua respectiva página.
 
-## 💫 Deploy
+- A capa da postagem estará como arquivo de nome `cover` também na pasta da postagem.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+- Portanto, a estrutura é a seguinte:
 
-<!-- AUTO-GENERATED-CONTENT:END -->
+  ```
+  posts/
+  	meu-post/
+  		content.md
+  		cover.jpg
+  	meu-outro-post/
+  		content.md
+  		cover.png
+  	...
+  ```
+
+
+
+
+
+## 🔨 Construído com
+
+- [GatsbyJS](https://www.gatsbyjs.org/) - Framework baseado em React para construção de sites rápidos, com geração do site ocorrendo de forma estática.
+- [React.js](https://reactjs.org/) - UI Framework (Front-end)
+- [Javascript](https://www.javascript.com/) - Linguagem de Programação
+
+
+
+
+
+## :eyes: Observações 
+
+- O Blog está na sua versão inicial, portanto será mantido ocasionalmente, com adição de novas features, expansão do design (é feito seguindo a prática Mobile-First), correção de inconsistências, etc...
+
+
+
+
+
+## ✍️ Contribuidores
+
+- [@cleberson-dev](https://github.com/cleberson-dev/) - Ideia e Trabalho Inicial
